@@ -2,11 +2,11 @@
 
 ## Nombre del Proyecto
 
-Estimación de tiempo de sobrevivencia en casos de cáncer de seno triple negativo.
+Prediccion de patologias del arbol de manzano
 
 ## Objetivo del Proyecto
 
-El objetivo de este proyecto es entrenar, validar y desplegar un modelo de *deep learning* que use como insumo imágenes de histopatología de paciente con cáncer de seno triple-negativo confirmado para calcular su curva de sobrevivencia.
+El objetivo es la creación de un modelo que realice la predicción de la patología que presente una imagen de arbol de manzano e identifique si presenta una enfermedad o si es una planta sana.
 
 ## Alcance del Proyecto
 
@@ -14,48 +14,52 @@ El objetivo de este proyecto es entrenar, validar y desplegar un modelo de *deep
 
 - **Descripción de los datos disponibles:**
 
-Para el desarrollo del proyecto se utilizará el conjunto de datos reportado en *The cnacer genome atlas* (TCGA), disponible en: https://portal.gdc.cancer.gov. 
+El desarrollo de este modelo se realizará basado en el reto de kaggle llamado Plant Patology 2020 el cual se encuentra en el siguiente link: [https://portal.gdc.cancer.gov](https://www.kaggle.com/code/victorlouisdg/plant-pathology-opencv-background-removal/input). 
 
-- [Descripción de los resultados esperados]
-- [Criterios de éxito del proyecto]
+- El resultado esperado es la obtención de un modelo de predicción de acuerdo a su llamado con una imagen.
+- Como criterio de exito es la obtención de una predicción con mas de 80 % de fiabilidad de la patología de la imagen.
 
 ### Excluye:
 
-- [Descripción de lo que no está incluido en el proyecto]
+- No se incluye la busqueda en otras plantas u otro tipo de imagenes diferentes al arból de manzano.
 
 ## Metodología
 
-[Descripción breve de la metodología que se utilizará para llevar a cabo el proyecto]
+Para este proyecto utilizaré la metodología TDSP que es la más acorde a este tipo de proyectos
 
 ## Cronograma
 
 | Etapa | Duración Estimada | Fechas |
 |------|---------|-------|
-| Entendimiento del negocio y carga de datos | 2 semanas | del 1 de mayo al 15 de mayo |
-| Preprocesamiento, análisis exploratorio | 4 semanas | del 16 de mayo al 15 de junio |
-| Modelamiento y extracción de características | 4 semanas | del 16 de junio al 15 de julio |
-| Despliegue | 2 semanas | del 16 de julio al 31 de julio |
-| Evaluación y entrega final | 3 semanas | del 1 de agosto al 21 de agosto |
+| Entendimiento del negocio y carga de datos | 2 semanas | del 22 de mayo al 2 de Junio |
+| Preprocesamiento, análisis exploratorio | 1 semana | del 5 de junio al 10 de junio |
+| Modelamiento y extracción de características | 1 semana | del 12 de junio al 17 de julio |
+| Despliegue | 1 semana | del 19 de junio al 24 de junio |
+| Evaluación y entrega final | 1 semana | del 26 de agosto al 1 de julio |
 
-Hay que tener en cuenta que estas fechas son de ejemplo, estas deben ajustarse de acuerdo al proyecto.
 
 ## Equipo del Proyecto
 
-- [Nombre y cargo del líder del proyecto]
-- [Nombre y cargo de los miembros del equipo]
+- Jaime Martínez Lider de proyecto
+- Jaime Martínez Lider y equipo
 
 ## Presupuesto
 
-[Descripción del presupuesto asignado al proyecto]
+Para este proyecto se debería contar con:
+- Product Owner -> $5.000.000
+- Machine Learning Engineer -> $8.000.000
+- Datascience -> $7.000.000
+- Tester -> $ 4.000.000
+- Backend Developer -> $6.000.000
 
 ## Stakeholders
 
-- [Nombre y cargo de los stakeholders del proyecto]
-- [Descripción de la relación con los stakeholders]
-- [Expectativas de los stakeholders]
+- Nelson Veira CEO compañia de producción de jugo de manzana
+- La relación se dió por contacto con el CEO de la compañia al necesitar un medio más efectivo de identificar el tipo de patología que afectaba sus cultivos y que fuera extensivo.
+- En una primera fase poder lograr una identificación exacta de la patología que afecta sus cultivos para luego generar planes de choque y mitigación.
 
 ## Aprobaciones
 
-- [Nombre y cargo del aprobador del proyecto]
+- Rodrigo Garcia Interventor del contrato.
 - [Firma del aprobador]
 - [Fecha de aprobación]
