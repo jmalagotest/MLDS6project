@@ -23,6 +23,6 @@ El conjunto de datos cuenta con dos partes: las imágenes (conjunto no estructur
 ### Base de datos de destino
 
 - Los datos resultantes son almacenados en un archivo HDF5, el cual contiene 3 datasets: representation, time y event:
-    - Representation: Representación extraido de una ren prentrenada.
+    - Representation: Representación extraido de una red prentrenada.
     - time: tiempo hasta el evento
     - event: Indicador del evento.
