@@ -1,27 +1,34 @@
 # Reporte de Datos
 
-Este documento contiene los resultados del análisis exploratorio de datos.
-
 ## Resumen general de los datos
 
-En esta sección se presenta un resumen general de los datos. Se describe el número total de observaciones, variables, el tipo de variables, la presencia de valores faltantes y la distribución de las variables.
+En general, el conjunto de datos está compuesto por tres factores: 
+    * WSI: imágenes de patología
+    * time: tiempo hasta el evento 
+    * event: evento presentado.
+
+En total, el conjunto de datos cuenta con 1062 pacientes, sin embargo, de estos solo 1038 cuentan con todos los registros completos. 
+
+![events](images/eventos.png)
+
+En la imagen se visualiza el balance entre los eventos reportados dentro del conjunto de datos.
 
 ## Resumen de calidad de los datos
 
-En esta sección se presenta un resumen de la calidad de los datos. Se describe la cantidad y porcentaje de valores faltantes, valores extremos, errores y duplicados. También se muestran las acciones tomadas para abordar estos problemas.
+En general, la cálida de los datos es bastante reducida, pues si bien el 98 % del dataset es utilizable, se denotan bastante imagen que contiene artefactos por la toma de la muestra. Algunos ejemplos:
+
+![artefactos](images/artefactos.png)
 
 ## Variable objetivo
 
-En esta sección se describe la variable objetivo. Se muestra la distribución de la variable y se presentan gráficos que permiten entender mejor su comportamiento.
+La variable objetivo es el tiempo hasta el evento, el cual depende del evento presentado, por lo cual se muestran las distribuciones para cada clase:
 
-## Variables individuales
-
-En esta sección se presenta un análisis detallado de cada variable individual. Se muestran estadísticas descriptivas, gráficos de distribución y de relación con la variable objetivo (si aplica). Además, se describen posibles transformaciones que se pueden aplicar a la variable.
-
-## Ranking de variables
-
-En esta sección se presenta un ranking de las variables más importantes para predecir la variable objetivo. Se utilizan técnicas como la correlación, el análisis de componentes principales (PCA) o la importancia de las variables en un modelo de aprendizaje automático.
+![time](images/time.png)
 
 ## Relación entre variables explicativas y variable objetivo
 
-En esta sección se presenta un análisis de la relación entre las variables explicativas y la variable objetivo. Se utilizan gráficos como la matriz de correlación y el diagrama de dispersión para entender mejor la relación entre las variables. Además, se pueden utilizar técnicas como la regresión lineal para modelar la relación entre las variables.
+Utilizando el backbone de una efficientNetV2 preentrenada se establece la representación de cada imagen, seguidamente se utiliza para observar la distribución de los datos de entrada respecto a la salida.
+
+![time](images/bb.png)
+
+En la imagen se observa la distribución conforme al evento presentado (azul: muerte, naranja: cura). Se identifica una baja separabilidad de los datos, lo que denota la necesidad de reajustar la red para favorecer una mejora en el desempeño durante el entrenamiento. 
