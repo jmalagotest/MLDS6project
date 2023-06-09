@@ -3,8 +3,11 @@
 ## Resumen general de los datos
 
 En general, el conjunto de datos está compuesto por tres factores: 
+
     - WSI: imágenes de patología
+
     - time: tiempo hasta el evento 
+    
     - event: evento presentado.
 
 En total, el conjunto de datos cuenta con 1062 pacientes, sin embargo, de estos solo 1038 cuentan con todos los registros completos. 
