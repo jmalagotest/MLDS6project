@@ -24,8 +24,4 @@ Como respuesta a este problema se realizan varios cambios al modelo original:
 | Conocrdancia | 0.6210 | 
 ## Conclusiones y Recomendaciones
 
-En esta sección se presentarán las conclusiones y recomendaciones a partir de los resultados obtenidos. Se deben incluir los puntos fuertes y débiles del modelo, las limitaciones y los posibles escenarios de aplicación.
-
-## Referencias
-
-En esta sección se deben incluir las referencias bibliográficas y fuentes de información utilizadas en el desarrollo del modelo.
+Los cambios añadidos al modelo permiten mejorar su desempeño en un 4%, incrementando además la estabilidad del entrenamiento.
